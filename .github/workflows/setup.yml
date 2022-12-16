@@ -32,6 +32,7 @@ jobs:
  
     - name: Install dependencies for GO
       run: |
+        go mod init germainewongg/Activity1a_TestNormal
         go install github.com/franela/goblin # Adds package for Goblin testing
         go install github.com/tebeka/go2xunit # Adds package for conversion
         go test -v # Command to run go test
